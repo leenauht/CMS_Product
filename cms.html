@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS Product</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FLOWBITE  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- TAILWIND  -->
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <nav
+      class="bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] shadow-blue-3 fixed w-full top-0 z-50"
+    >
+      <div class="mx-auto py-5 max-w-w-1280">
+        <div class="flex items-center justify-between">
+          <div class="flex gap-20">
+            <a
+              href="#"
+              class="flex items-center gap-4 font-medium text-blue-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 1024 1024"
+              >
+                <path
+                  fill="currentColor"
+                  d="M270.1 741.7c0 23.4 19.1 42.5 42.6 42.5h48.7v120.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V784.1h85v120.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V784.1h48.7c23.5 0 42.6-19.1 42.6-42.5V346.4h-486zm357.1-600.1l44.9-65c2.6-3.8 2-8.9-1.5-11.4c-3.5-2.4-8.5-1.2-11.1 2.6l-46.6 67.6c-30.7-12.1-64.9-18.8-100.8-18.8c-35.9 0-70.1 6.7-100.8 18.8l-46.6-67.5c-2.6-3.8-7.6-5.1-11.1-2.6c-3.5 2.4-4.1 7.4-1.5 11.4l44.9 65c-71.4 33.2-121.4 96.1-127.8 169.6h486c-6.6-73.6-56.7-136.5-128-169.7M409.5 244.1a26.9 26.9 0 1 1 26.9-26.9a26.97 26.97 0 0 1-26.9 26.9m208.4 0a26.9 26.9 0 1 1 26.9-26.9a26.97 26.97 0 0 1-26.9 26.9m223.4 100.7c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V400.1c.1-30.6-24.3-55.3-54.6-55.3m-658.6 0c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V400.1c0-30.6-24.5-55.3-54.6-55.3"
+                />
+              </svg>
+              <span class="text-3xl font-medium">Cyber Phone</span>
+            </a>
+
+            <div class="flex items-center justify-center gap-20">
+              <div>
+                <a
+                  href="#"
+                  class="flex flex-col items-center font-medium text-gray-700 hover:text-blue-600"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2M568 868H456V664h112zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7l23.1 23.1L882 542.3z"
+                    />
+                  </svg>
+                  Home
+                </a>
+              </div>
+              <div>
+                <a
+                  href="./index.html"
+                  class="flex flex-col items-center font-medium text-gray-700 hover:text-blue-600"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M882 272.1V144c0-17.7-14.3-32-32-32H174c-17.7 0-32 14.3-32 32v128.1c-16.7 1-30 14.9-30 31.9v131.7a177 177 0 0 0 14.4 70.4c4.3 10.2 9.6 19.8 15.6 28.9v345c0 17.6 14.3 32 32 32h676c17.7 0 32-14.3 32-32V535a175 175 0 0 0 15.6-28.9c9.5-22.3 14.4-46 14.4-70.4V304c0-17-13.3-30.9-30-31.9M214 184h596v88H214zm362 656.1H448V736h128zm234 0H640V704c0-17.7-14.3-32-32-32H416c-17.7 0-32 14.3-32 32v136.1H214V597.9c2.9 1.4 5.9 2.8 9 4c22.3 9.4 46 14.1 70.4 14.1s48-4.7 70.4-14.1c13.8-5.8 26.8-13.2 38.7-22.1c.2-.1.4-.1.6 0a180.4 180.4 0 0 0 38.7 22.1c22.3 9.4 46 14.1 70.4 14.1c24.4 0 48-4.7 70.4-14.1c13.8-5.8 26.8-13.2 38.7-22.1c.2-.1.4-.1.6 0a180.4 180.4 0 0 0 38.7 22.1c22.3 9.4 46 14.1 70.4 14.1c24.4 0 48-4.7 70.4-14.1c3-1.3 6-2.6 9-4v242.2zm30-404.4c0 59.8-49 108.3-109.3 108.3c-40.8 0-76.4-22.1-95.2-54.9c-2.9-5-8.1-8.1-13.9-8.1h-.6c-5.7 0-11 3.1-13.9 8.1A109.24 109.24 0 0 1 512 544c-40.7 0-76.2-22-95-54.7c-3-5.1-8.4-8.3-14.3-8.3s-11.4 3.2-14.3 8.3a109.63 109.63 0 0 1-95.1 54.7C233 544 184 495.5 184 435.7v-91.2c0-.3.2-.5.5-.5h655c.3 0 .5.2.5.5z"
+                    />
+                  </svg>
+                  Store
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <a
+              href="#"
+              class="flex flex-col items-center font-medium text-gray-700 hover:text-blue-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 1024 1024"
+              >
+                <path
+                  fill="currentColor"
+                  d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2M305.7 253l575.8 1.9l-56.4 315.8l-452.3.8zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6m325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6"
+                />
+              </svg>
+              Cart
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ------------------------Phone Management------------------------ -->
+    <section class="mt-40">
+      <div class="container mx-auto mb-16">
+        <div class="my-5">
+          <h1 class="text-center text-4xl font-medium">Phone Management</h1>
+        </div>
+
+        <div class="flex justify-end">
+          <!-- Modal toggle -->
+          <button
+            id="btnAdd"
+            data-modal-target="crud-modal"
+            data-modal-toggle="crud-modal"
+            class="flex items-center gap-2 px-4 py-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm text-center me-2 mb-2"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="currentColor"
+                d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8"
+              />
+              <path
+                fill="currentColor"
+                d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8Z"
+              />
+            </svg>
+            Add Phone
+          </button>
+        </div>
+
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+          <table class="w-full text-sm text-left text-gray-700">
+            <thead class="text-xs uppercase bg-gray-200">
+              <tr>
+                <th scope="col" class="px-6 py-3">#</th>
+                <th scope="col" class="px-6 py-3">Name</th>
+                <th scope="col" class="px-6 py-3">Price</th>
+                <th scope="col" class="px-6 py-3">Photo</th>
+                <th scope="col" class="px-6 py-3">Discription</th>
+                <th scope="col" class="px-6 py-3">Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbListProduct"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Main modal -->
+      <div
+        id="crud-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-md max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+            >
+              <h3
+                id="title_modal"
+                class="text-lg font-semibold text-gray-900 dark:text-white"
+              >
+                Phone Management
+              </h3>
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-toggle="crud-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <form class="p-4 md:p-5">
+              <div class="grid gap-2 mb-4 grid-cols-2">
+                <div class="col-span-2">
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                  >
+                    Phone Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    placeholder="Phone name"
+                  />
+                  <span class="sp-thongbao" id="tbname">&zwj;</span>
+                </div>
+
+                <div class="col-span-1">
+                  <label
+                    for="price"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Price</label
+                  >
+                  <input
+                    type="number"
+                    name="price"
+                    id="price"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="$0"
+                  />
+                  <span class="sp-thongbao" id="tbprice">&zwj;</span>
+                </div>
+
+                <div class="col-span-1">
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Screen</label
+                  >
+                  <input
+                    type="text"
+                    id="screen"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="Screen"
+                  />
+                  <span class="sp-thongbao" id="tbscreen">&zwj;</span>
+                </div>
+
+                <div class="col-span-2">
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Back Camera</label
+                  >
+                  <input
+                    type="text"
+                    id="backCam"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="Back Camera"
+                  />
+                  <span class="sp-thongbao" id="tbbackCam">&zwj;</span>
+                </div>
+
+                <div class="col-span-1">
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Front Camera</label
+                  >
+                  <input
+                    type="text"
+                    id="frontCam"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="Front Camera"
+                  />
+                  <span class="sp-thongbao" id="tbfrontCam">&zwj;</span>
+                </div>
+
+                <div class="col-span-1">
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Image link</label
+                  >
+                  <input
+                    type="text"
+                    id="img"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="Url link"
+                  />
+                  <span class="sp-thongbao" id="tbimg">&zwj;</span>
+                </div>
+
+                <div class="col-span-2">
+                  <label
+                    for="description"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Description</label
+                  >
+                  <textarea
+                    id="desc"
+                    rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Write phone description here"
+                  ></textarea>
+                  <span class="sp-thongbao" id="tbdesc">&zwj;</span>
+                </div>
+
+                <div class="col-span-2">
+                  <label
+                    for="category"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Select brand</label
+                  >
+                  <select
+                    id="type"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  >
+                    <option selected="" disabled="">Select brand</option>
+                    <option>Iphone</option>
+                    <option>Samsung</option>
+                    <option>Xiaomi</option>
+                  </select>
+                  <span class="sp-thongbao" id="tbtype">&zwj;</span>
+                </div>
+              </div>
+            </form>
+            <div class="flex justify-end gap-2 pb-5 pr-5">
+              <button
+                onclick="handleAdd()"
+                class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              >
+                Add Phone
+              </button>
+              <button
+                onclick="handleUpdate()"
+                class="text-white inline-flex items-center bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              >
+                Update Phone
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------Footer-------------------------- -->
+    <footer class="bg-bg-footer">
+      <div class="mx-auto max-w-w-1390 px-5">
+        <div class="py-10">
+          <div class="flex flex-wrap gap-24">
+            <div class="w-1/4">
+              <div class="flex items-center text-blue-600">
+                <a href="#" class="font-medium text-blue-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M270.1 741.7c0 23.4 19.1 42.5 42.6 42.5h48.7v120.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V784.1h85v120.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V784.1h48.7c23.5 0 42.6-19.1 42.6-42.5V346.4h-486zm357.1-600.1l44.9-65c2.6-3.8 2-8.9-1.5-11.4c-3.5-2.4-8.5-1.2-11.1 2.6l-46.6 67.6c-30.7-12.1-64.9-18.8-100.8-18.8c-35.9 0-70.1 6.7-100.8 18.8l-46.6-67.5c-2.6-3.8-7.6-5.1-11.1-2.6c-3.5 2.4-4.1 7.4-1.5 11.4l44.9 65c-71.4 33.2-121.4 96.1-127.8 169.6h486c-6.6-73.6-56.7-136.5-128-169.7M409.5 244.1a26.9 26.9 0 1 1 26.9-26.9a26.97 26.97 0 0 1-26.9 26.9m208.4 0a26.9 26.9 0 1 1 26.9-26.9a26.97 26.97 0 0 1-26.9 26.9m223.4 100.7c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V400.1c.1-30.6-24.3-55.3-54.6-55.3m-658.6 0c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V400.1c0-30.6-24.5-55.3-54.6-55.3"
+                    />
+                  </svg>
+                </a>
+                <span class="text-3xl font-medium">Cyber Phone</span>
+              </div>
+              <p class="mt-5 mb-10 text-color-text text-18">
+                We pride ourselves on our efficiency and hard work, but most of
+                all our ability to source you the best quality and best value
+                products and devices in the market.
+              </p>
+            </div>
+
+            <div
+              class="wow animate__animated animate_down flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w2/3 xl:w-7/12"
+            >
+              <div>
+                <h3 class="mb-9 text-26 font-medium text-black">Brands</h3>
+                <ul class="text-color-text text-18">
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block mb-3 duration-300 hover:text-color-hover"
+                      >iPhone</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block mb-3 duration-300 hover:text-color-hover"
+                      >Sumsung
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block mb-3 duration-300 hover:text-color-hover"
+                      >Xiaomi</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block mb-3 duration-300 hover:text-color-hover"
+                      >Oppo</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="mb-9 text-26 font-medium text-black">
+                  Useful links
+                </h3>
+                <ul class="text-color-text text-18">
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block mb-3 duration-300 hover:text-color-hover"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block mb-3 duration-300 hover:text-color-hover"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block mb-3 duration-300 hover:text-color-hover"
+                      >Orders</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block mb-3 duration-300 hover:text-color-hover"
+                      >Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="mb-9 text-26 font-medium text-black">Contact</h3>
+                <ul class="text-color-text text-18">
+                  <li>
+                    <div class="flex items-center gap-5 mb-3">
+                      <i class="fa-solid fa-house"></i>
+                      <span>Tân Bình, Tp.HCM</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex items-center gap-5 mb-3">
+                      <i class="fa-solid fa-envelope"></i>
+                      <span>abcd@gmail.com</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex items-center gap-5 mb-3">
+                      <i class="fa-solid fa-phone"></i>
+                      <span>+ 84 123 246 789</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex items-center gap-5 mb-3">
+                      <i class="fa-solid fa-print"></i>
+                      <span>+ 01 234 567 89</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="py-8 px-20 flex items-center flex-wrap gap-5 border-t justify-between"
+      >
+        <div>
+          <ul class="text-color-text text-18 flex gap-8 items-center">
+            <li class="duration-300 hover:text-color-hover">
+              <a href="#">English</a>
+            </li>
+            <li class="duration-300 hover:text-color-hover">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="duration-300 hover:text-color-hover">
+              <a href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-color-text text-18">
+            © 2024 Cyber Phone. All rights reserved
+          </p>
+        </div>
+
+        <div class="flex gap-5 items-center">
+          <a href="#" class="text-gray-500">
+            <svg
+              class="transition-all duration-300 hover:text-color-hover"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16
+              5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657
+              10 6.7V9.5H7V13.5H10V22H14V13.5Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-500">
+            <svg
+              class="transition-all duration-300 hover:text-color-hover"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.162 5.65593C21.3985 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4803 3.89489 16.5709 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52832 8.31345 7.04328 7.56059C5.55823 6.80773 4.24812 5.75098 3.19799 4.45893C2.82628 5.09738 2.63095 5.82315 2.63199 6.56193C2.63199 8.01193 3.36999 9.29293 4.49199 10.0429C3.828 10.022 3.17862 9.84271 2.59799 9.51993V9.57193C2.59819 10.5376 2.93236 11.4735 3.54384 12.221C4.15532 12.9684 5.00647 13.4814 5.95299 13.6729C5.33661 13.84 4.6903 13.8646 4.06299 13.7449C4.32986 14.5762 4.85 15.3031 5.55058 15.824C6.25117 16.345 7.09712 16.6337 7.96999 16.6499C7.10247 17.3313 6.10917 17.8349 5.04687 18.1321C3.98458 18.4293 2.87412 18.5142 1.77899 18.3819C3.69069 19.6114 5.91609 20.2641 8.18899 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-500">
+            <svg
+              class="transition-all duration-300 hover:text-color-hover"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46944 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.1502 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15124 3.95899 3.5265 3.5841C3.90176 3.20922 4.41057 2.99876 4.941 2.99902C5.47144 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-500">
+            <svg
+              class="transition-all duration-300 hover:text-color-hover"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.443 5.3501C8.082 5.3501 8.673 5.4001 9.213 5.5481C9.70301 5.63814 10.1708 5.82293 10.59 6.0921C10.984 6.3391 11.279 6.6861 11.475 7.1311C11.672 7.5761 11.77 8.1211 11.77 8.7141C11.77 9.4071 11.623 10.0001 11.279 10.4451C10.984 10.8911 10.492 11.2861 9.902 11.5831C10.738 11.8311 11.377 12.2761 11.77 12.8691C12.164 13.4631 12.41 14.2051 12.41 15.0461C12.41 15.7391 12.262 16.3321 12.016 16.8271C11.77 17.3221 11.377 17.7671 10.934 18.0641C10.4528 18.3825 9.92084 18.6165 9.361 18.7561C8.771 18.9051 8.181 19.0041 7.591 19.0041H1V5.3501H7.443ZM7.049 10.8901C7.59 10.8901 8.033 10.7421 8.377 10.4951C8.721 10.2481 8.869 9.8021 8.869 9.2581C8.869 8.9611 8.819 8.6641 8.721 8.4671C8.623 8.2691 8.475 8.1201 8.279 7.9721C8.082 7.8731 7.885 7.7741 7.639 7.7251C7.393 7.6751 7.148 7.6751 6.852 7.6751H4V10.8911H7.05L7.049 10.8901ZM7.197 16.7281C7.492 16.7281 7.787 16.6781 8.033 16.6291C8.28138 16.5819 8.51628 16.4805 8.721 16.3321C8.92139 16.1873 9.08903 16.002 9.213 15.7881C9.311 15.5411 9.41 15.2441 9.41 14.8981C9.41 14.2051 9.213 13.7101 8.82 13.3641C8.426 13.0671 7.885 12.9191 7.246 12.9191H4V16.7291H7.197V16.7281ZM16.689 16.6781C17.082 17.0741 17.672 17.2721 18.459 17.2721C19 17.2721 19.492 17.1241 19.885 16.8771C20.279 16.5801 20.525 16.2831 20.623 15.9861H23.033C22.639 17.1731 22.049 18.0141 21.263 18.5581C20.475 19.0531 19.541 19.3501 18.41 19.3501C17.6864 19.3523 16.9688 19.2179 16.295 18.9541C15.6887 18.7266 15.148 18.3529 14.721 17.8661C14.2643 17.4107 13.9267 16.8498 13.738 16.2331C13.492 15.5901 13.393 14.8981 13.393 14.1061C13.393 13.3641 13.492 12.6721 13.738 12.0281C13.9745 11.4082 14.3245 10.8378 14.77 10.3461C15.213 9.9011 15.754 9.5061 16.344 9.2581C17.0007 8.99416 17.7022 8.85969 18.41 8.8621C19.246 8.8621 19.984 9.0111 20.623 9.3571C21.263 9.7031 21.754 10.0991 22.148 10.6931C22.5499 11.2636 22.8494 11.8998 23.033 12.5731C23.131 13.2651 23.18 13.9581 23.131 14.7491H16C16 15.5411 16.295 16.2831 16.689 16.6791V16.6781ZM19.787 11.4841C19.443 11.1381 18.902 10.9401 18.262 10.9401C17.82 10.9401 17.475 11.0391 17.18 11.1871C16.885 11.3361 16.689 11.5341 16.492 11.7321C16.311 11.9234 16.1912 12.1643 16.148 12.4241C16.098 12.6721 16.049 12.8691 16.049 13.0671H20.475C20.377 12.3251 20.131 11.8311 19.787 11.4841V11.4841ZM15.459 6.2901H20.967V7.6261H15.46V6.2901H15.459Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOWBITE  -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js"
+      integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="module" src="./app/controllers/cms-main.js"></script>
+  </body>
+</html>
